@@ -1,5 +1,3 @@
-app: warp
--
 cancel: key("escape")
 undo: key("u")
 redo: key("R")
@@ -14,3 +12,21 @@ cider do select <user.text>:
   insert("(select :")
   insert(text)
   insert(")")
+
+dub quote:
+  insert("\"\"")
+  key(left)
+
+push:
+  key("esc")
+  sleep(50ms)
+  key(A)
+
+squares:
+  insert("[]")
+  key(left)
+
+not that:
+  key(esc)
+  sleep(50ms)
+  key(u)

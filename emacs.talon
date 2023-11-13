@@ -14,17 +14,51 @@ line end: key($)
 select to: key(v)
 
 # SEXP mode #
-term last: key("space k h")
-term next: key("space k l")
+term last:
+  key("esc")
+  sleep(50ms)
+  key("space k h")
+term next:
+  key("esc")
+  sleep(50ms)
+  key("space k l")
 quote that: key("s \"")
-(parens | wrap) that: key("space k w")
-unwrap that: key("space k W")
-slurp that: key("space k s")
-(barf | spit) that: key("space k b")
-block [new] before: key("space k (")
-block [new] after: key("space k )")
-block outer: key("space k U")
-swap (that | next): key("space k t")
+(parens | wrap) that:
+  key("esc")
+  sleep(50ms)
+  key("space k w")
+unwrap that:
+  key("esc")
+  sleep(50ms)
+  key("space k W")
+slurp that:
+  key("esc")
+  sleep(50ms)
+  key("space k s")
+(barf | spit) that:
+  key("esc")
+  sleep(50ms)
+  key("space k b")
+block [new] before:
+  key("esc")
+  sleep(50ms)
+  key("space k (")
+block [new] after:
+  key("esc")
+  sleep(50ms)
+  key("space k )")
+block end:
+  key("esc")
+  sleep(50ms)
+  key("space k $")
+block outer:
+  key("esc")
+  sleep(50ms)
+  key("space k U")
+swap (that | next):
+  key("esc")
+  sleep(50ms)
+  key("space k t")
 
 # EVIL MODE panes (windows) #
 buffer kill: key("space b d")

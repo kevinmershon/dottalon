@@ -3,6 +3,9 @@ clojure,closure
 clojure,closer
 cider,say er
 cider,sayer
+cider,sit red
+cider,sit rerun
+console,consul
 def,deaf
 defn,deafen
 defn,define
@@ -11,4 +14,7 @@ defn-,def and dash
 deps,debts
 deps,depths
 jack-in,jacket
+println,print line
+rocksdb,rock deb
+rocksdb,rocks deb
 when,win

@@ -1,9 +1,11 @@
 from talon import Context, Module, actions
 
 mod = Module()
+mod.tag("cider", desc="CIDER repl for Clojure Emacs")
+
 ctx = Context()
 ctx.matches = r"""
-tag: cider
+tag: user.cider
 """
 
 cider_prefix = ","

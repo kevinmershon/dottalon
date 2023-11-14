@@ -1,5 +1,5 @@
-app: emacs
--
+tag: user.cider
+--
 
 # SEXP mode #
 term last: user.sexp_mode_key_chord("h")

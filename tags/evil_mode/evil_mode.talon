@@ -1,18 +1,15 @@
-app: emacs
--
-@tag(): cider
-
-treemacs: key(f2)
+tag: user.evil_mode
+--
 
 # EVIL MODE movement #
-select block: key("v a p k")
-select line: key(V)
-select cut: key(d)
+block select: key("v a p k")
 block (previous | last): key("{ { j")
 block next: key("} j")
+line select: key(V)
 line cut: key("d d")
 line start: key(0)
 line end: key($)
+select cut: key(d)
 select to: key(v)
 
 # EVIL MODE panes (windows) #

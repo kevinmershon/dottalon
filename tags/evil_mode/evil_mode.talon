@@ -13,6 +13,7 @@ select cut: key(d)
 select to: key(v)
 
 # EVIL MODE panes (windows) #
+buffer find: key("space b b")
 buffer kill: key("space b d")
 pane (previous | last): key("ctrl-w h")
 pane next: key("ctrl-w l")

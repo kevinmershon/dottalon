@@ -13,11 +13,8 @@ redo: key("R")
 emacs go: "emacs -nw\n"
 vim go: "vim\n"
 
-cider do select <user.text>:
-  user.escape_and_sleep()
-  user.cider_do("select :")
-  insert(text)
-  actions.key("left")
+cider select <user.text>:
+  user.cider_select(text)
 
 dub quote:
   insert("\"\"")

@@ -19,7 +19,10 @@ cider clear: user.cider_key_chord("s l")
 cider connect:
   user.emacs("cider-connect")
   user.sleep_and_enter()
-cider eval: user.cider_key_chord("s e b")
+cider debug [term]: user.cider_key_chord("d b")
+cider eval buffer: user.cider_key_chord("e b")
+cider eval [term]: user.cider_key_chord("e v")
+cider pprint: user.cider_key_chord("e p e")
 cider focus:
   user.emacs("cider-switch-to-repl-buffer")
   user.sleep_and_enter()

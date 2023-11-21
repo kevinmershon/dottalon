@@ -33,3 +33,18 @@ not that:
   key(esc)
   sleep(50ms)
   key(u)
+
+go to line <number>:
+  user.escape_and_sleep()
+  key(number)
+  key(G)
+add a comment:
+  user.escape_and_sleep()
+  key("i")
+  key("; ;")
+comment this:
+  user.escape_and_sleep()
+  key("I ; ;")
+copilot toggle:
+  user.emacs("copilot-mode")
+  user.sleep_and_enter()

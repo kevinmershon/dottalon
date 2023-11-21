@@ -10,7 +10,6 @@ slurp that: user.sexp_mode_key_chord("s")
 (barf | spit) that: user.sexp_mode_key_chord("b")
 block [new] before: user.sexp_mode_key_chord("(")
 block [new] after: user.sexp_mode_key_chord(")")
-block end: user.sexp_mode_key_chord("$")
 block outer: user.sexp_mode_key_chord("U")
 swap (that | next): user.sexp_mode_key_chord("t")
 
@@ -26,6 +25,8 @@ cider pprint: user.cider_key_chord("e p e")
 cider focus:
   user.emacs("cider-switch-to-repl-buffer")
   user.sleep_and_enter()
+cider format:
+  user.cider_key_chord("= l")
 cider jack in:
   user.emacs("cider-jack-in")
   user.sleep_and_enter()

@@ -56,4 +56,4 @@ class Actions:
 @ctx.action_class("edit")
 class EditActions:
   def line_insert_down():
-    actions.user.evil_keychord("o")
+    actions.key("enter")

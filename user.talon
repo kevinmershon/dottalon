@@ -34,6 +34,9 @@ not that:
   sleep(50ms)
   key(u)
 
+block start: user.evil_keychord("{j")
+block end: user.evil_keychord("{j%")
+
 copilot toggle:
   user.emacs("copilot-mode")
   user.sleep_and_enter()
